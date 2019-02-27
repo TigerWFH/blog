@@ -23,7 +23,8 @@
 * p：problems
 
 # blogs
-* [demo](./201901-b/demo.md)
+* [排序算法](./201902-b/sort.md)
+* [查找算法](./201902-b/search.md)
 
 # Problems
 * [demo](./201901-p/demo.md)
