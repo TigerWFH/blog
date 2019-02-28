@@ -1,0 +1,11 @@
+可用工具列表：
+Fontforge（之前用过，不知道为什么最新官网下载不了啦）
+FontLab
+Glyphs
+roboFont等等一系列字体信息获取工具，
+本次Demo采用FontLab获取字体信息，在Mac系统上进行实验，macOS High Sierra版本是10.13.6, MacBookPro(Retina, 130inch, Late 2013)
+
+Mac系统会使用 HHead Ascent和HHead Descent值渲染字体
+Windows系统会使用Win Ascent和Win Descent值渲染字体
+
+至于为什么，个人认为应该是标准缺失、商业竞争造成的结果
