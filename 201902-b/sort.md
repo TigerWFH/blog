@@ -117,6 +117,40 @@ JS代码：
 ```
 
 * `直接选择排序（选择排序）：`
+```
+思想：
+    每次选出最小或最大的元素，存放到排序序列的起始位置，然后再从剩余的待排序列中选取最小或最大的元素，存放到排序序列的后序位置，知道将所有的元素排列起来。
+js代码：
+    const mockData = [1, 34, 56, 2, 45, 78, 32, 7, 10, 11];
+    // const mockData = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+    // const mockData = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
+
+    function swap(a, left, right) {
+        let tmp = a[left];
+        a[left] = a[right];
+        a[right] = tmp;
+    }
+
+    function selectonSort(a) {
+        if (!Array.isArray(a)) {
+            return;
+        }
+        let length = a.length;
+        for (let i = 1; i < length; i++){
+            let min = a[i - 1];
+            let minIndex = i - 1;
+            for(let j = i; j < length; j++) {
+                if (min > a[j]) {
+                    min = a[j];
+                    minIndex = j;
+                }
+            }
+            swap(a, i - 1, minIndex);
+        }
+    }
+    selectonSort(mockData);
+    console.log("arr===selectonSort===>", mockData);
+```
 * `堆排序（选择排序）：`
 
 * `直接插入排序（插入排序）：`

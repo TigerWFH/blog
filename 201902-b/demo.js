@@ -2,37 +2,28 @@ const mockData = [1, 34, 56, 2, 45, 78, 32, 7, 10, 11];
 // const mockData = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
 // const mockData = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ];
 
-function swap(a, big, small) {
-    let tmp = a[small];
-    a[small] = a[big];
-    a[big] = tmp;
+function swap(a, left, right) {
+    let tmp = a[left];
+    a[left] = a[right];
+    a[right] = tmp;
 }
 
-function quickSort(a, left, right) {
-    if (left >= right) {
+function selectonSort(a) {
+    if (!Array.isArray(a)) {
         return;
     }
-    let key = a[left];
-    let begin = left++;
-    let end = right;
-    while(left < right) {
-        while(a[right] > key && left < right) {
-            right--;
+    let length = a.length;
+    for (let i = 1; i < length; i++){
+        let min = a[i - 1];
+        let minIndex = i - 1;
+        for(let j = i; j < length; j++) {
+            if (min > a[j]) {
+                min = a[j];
+                minIndex = j;
+            }
         }
-        while(a[left] < key && left < right) {
-            left++;
-        }
-        if (left < right) {
-            swap(a, left, right);
-        }
+        swap(a, i - 1, minIndex);
     }
-
-    if (left === right && key > a[left]) {
-        swap(a, begin, left);
-    }
-    quickSort(a, begin, left - 1);
-    quickSort(a, left, end);
 }
-
-quickSort(mockData, 0, mockData.length - 1);
-console.log("arr===quicksort===>", mockData);
+selectonSort(mockData);
+console.log("arr===selectonSort===>", mockData);
