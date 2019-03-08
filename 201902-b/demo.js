@@ -15,7 +15,7 @@ function swap(a, left, right) {
     a[right] = tmp;
 }
 
-function adjustHeap(a, begin/*开始位置 */, end/*待调整元素索引 */) {
+function adjustHeap(a, end/*待调整元素索引 */) {
     let middle = Math.floor(end / 2);
     while(middle >= 0) {
         if (middle * 2 + 1 <= end) {
@@ -41,8 +41,7 @@ function heapSort(a) {
         return;
     }
     for (let i = a.length - 1; i >= 0; i--) {
-        adjustHeap(a, 0, i );
-        console.log("a===>", a);
+        adjustHeap(a, i );
         swap(a, 0, i);
     }
 }
