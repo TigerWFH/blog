@@ -15,18 +15,37 @@ function swap(a, left, right) {
     a[right] = tmp;
 }
 
-
 function insertSort(a) {
     if (!Array.isArray(a)) {
-        return;
+        return ;
     }
+
     for (let i = 1; i < a.length; i++) {
-        for (let j = i; j > 0; j--) {
-            if (a[j] < a[j - 1] ) {
-                swap(a, j - 1, j);
+        let value = a[i];
+        let index = i;
+        if (value < a[i - 1]) {
+            for (let j = i; j >= 0; j--) {
+                if (value < a[j]) {
+                    swap(a, j, index);
+                    index--;
+                }
+                console.log("a===>", a);
             }
         }
+        a[index] = value;
     }
 }
+// function insertSort(a) {
+//     if (!Array.isArray(a)) {
+//         return;
+//     }
+//     for (let i = 1; i < a.length; i++) {
+//         for (let j = i; j > 0; j--) {
+//             if (a[j] < a[j - 1] ) {
+//                 swap(a, j - 1, j);
+//             }
+//         }
+//     }
+// }
 insertSort(mockData);
 console.log("arr===insertSort===>", mockData);
