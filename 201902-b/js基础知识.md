@@ -10,9 +10,27 @@
 
 `Node`
 ```
+前置数据结构：
+NodeList
+NamedNodeMap
+DOMImplementation
+前置定义：
+Node.ELEMENT_NODE(1)(常用)
+Node.ATTRIBUTE_NODE(2)(常用)
+Node.TEXT_NODE(4)(常用)
+Node.CDATA_SECTION_NODE(5)
+Node.ENTITY_REFERENCE_NODE(6)
+Node.PROCESSING_INSTRUCTION_NODE(7)
+Node.COMMENT_NODE(8)(常见)
+Node.DOCUMENT_NODE(9)(常见)
+Node.DOCUMENT_TYPE_NODE(10)
+Node.DOCUMENT_FRAGMENT_NODE(11)
+Node.NOTATION_NODE(12)
+
 Node = {
     nodeType: '',
     nodeName: '',
+    nodeValue: ''
     
 }
 ```
