@@ -1,0 +1,56 @@
+@startuml
+Object <|-- HTMLCollection
+Object <|-- HTMLOptionsCollection
+Document <|-- HTMLDocument
+Element <|-- HTMLElement
+HTMLElement <|--HTMLHtmlElement
+HTMLElement <|--HTMLHeadElement
+HTMLElement <|--HTMLLinkElement
+HTMLElement <|--HTMLTitleElement
+HTMLElement <|--HTMLMetaElement
+HTMLElement <|--HTMLBaseElement
+HTMLElement <|--HTMLStyleElement
+HTMLElement <|--HTMLBodyElement
+HTMLElement <|--HTMLFormElement
+HTMLElement <|--HTMLSelectElement
+HTMLElement <|--HTMLOptGroupElement
+HTMLElement <|--HTMLOptionElement
+HTMLElement <|--HTMLInputElement
+HTMLElement <|--HTMLTextAreaElement
+HTMLElement <|--HTMLButtonElement
+HTMLElement <|--HTMLLabelElement
+HTMLElement <|--HTMLFieldSetElement
+HTMLElement <|--HTMLLegendElement
+HTMLElement <|--HTMLUListElement
+HTMLElement <|--HTMLOListElement
+HTMLElement <|--HTMLDlistElement
+HTMLElement <|--HTMLDirectoryElement
+HTMLElement <|--HTMLMenuElement
+HTMLElement <|--HTMLLiElement
+HTMLElement <|--HTMLDivElement
+HTMLElement <|--HTMLParagraphElement
+HTMLElement <|--HTMLHeadingElement
+HTMLElement <|--HTMLQuoteElement
+HTMLElement <|--HTMLPreElement
+HTMLElement <|--HTMLBREElement
+HTMLElement <|--HTMLBaseFontElement
+HTMLElement <|--HTMLFontElement
+HTMLElement <|--HTMLHRElement
+HTMLElement <|--HTMLModElement
+HTMLElement <|--HTMLAnchorElement
+HTMLElement <|--HTMLImageElement
+HTMLElement <|--HTMLObjectElement
+HTMLElement <|--HTMLParamElement
+HTMLElement <|--HTMLAppletElement
+HTMLElement <|--HTMLMapElement
+HTMLElement <|--HTMLAreaElement
+HTMLElement <|--HTMLScriptElement
+HTMLElement <|--HTMLTableElement
+HTMLElement <|--HTMLTableCaptionElement
+HTMLElement <|--HTMLTableColElement
+HTMLElement <|--HTMLTableSectionElement
+HTMLElement <|--HTMLTableRowElement
+HTMLElement <|--HTMLTableCellElement
+HTMLElement <|--HTMLFrameSetElement
+HTMLElement <|--HTMLIFrameElement
+@enduml

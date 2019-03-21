@@ -1,5 +1,23 @@
 # js基础知识集合
 
+# [js中DOM](http://w3help.org/zh-cn/causes/SD9024)
+
+[此处的结论引述自...](http://w3help.org/zh-cn/causes/SD9024)
+* `在 IE6 IE7 IE8(Q) 中，无法通过脚本检测到 DOM 接口原型，故无法获得其接口继承关系。`
+* `在 IE8(S) 中，只能检测到部分 DOM 接口原型，但这些原型不可枚举，故无法获得其接口继承关系。`
+* `在 Firefox 中，部分 DOM 接口原型不可枚举，接口继承关系与 DOM 规范中的描述不符。`
+* `在 Chrome Safari Opera 中，DOM 接口继承关系遵照了 DOM 规范中的描述。`
+
+`Node`
+```
+Node = {
+    nodeType: '',
+    nodeName: '',
+    
+}
+```
+* 
+
 # js中的类型转换
 
 ## js的显式类型转换
