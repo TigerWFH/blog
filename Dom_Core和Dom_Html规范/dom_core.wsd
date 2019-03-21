@@ -1,0 +1,16 @@
+@startuml
+Object <|-- Node
+Node <|-- Notion
+Node <|-- ProcessingInstruction
+Node <|-- Entity
+Node <|-- EntityReference
+Node <|-- DocumentFragment
+Node <|-- DocumentType
+Node <|-- Document
+Node <|-- Element
+Node <|-- Attr
+Node <|-- CharacterData
+CharacterData <|-- Comment
+CharacterData <|-- Text
+Text <|-- CDATASection
+@enduml
