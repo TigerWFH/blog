@@ -16,3 +16,11 @@
 * SOA描述了一个信息系统理想的结构。基于ESB（Enterprise Service Bus）、BPM（Business Process Management）、BO（BusinessOptimization）中间件平台，将整个西戎划分实现为基础的数据服务、基础的公共功能服务、业务逻辑和流程服务、各种渠道接口和客户端展现框架。
 
 * `个人理解：`SOA是存在于分析、设计阶段的，还未涉及具体技术（开发、测试、部署、维护）阶段
+
+# 关于webservice
+
+[先看这个](https://blog.csdn.net/a724888/article/details/80752648)
+[webservice](https://wenwen.sogou.com/z/q771688124.htm?ch=ww.xqy.xgzs&pid=ww.xqy.xgzs)
+[一大坨历史材料](https://www.zhihu.com/question/23299132#answer-39462938)
+[一大坨历史材料2](https://www.zhihu.com/topic/19876846/hot)
+[一大坨历史材料3](https://www.zhihu.com/question/27230866/answer/50293774)
