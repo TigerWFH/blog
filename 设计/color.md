@@ -26,3 +26,6 @@
 * color mode
 * color gamut
 * color psace
+
+[色彩研究相关参考资料1](https://www.uisdc.com/comprehensive-gradual-design-guideline)
+[色彩研究相关参考资料2](https://www.uisdc.com/non-designer-gradient-color)
