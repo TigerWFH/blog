@@ -1,3 +1,6 @@
 /**
  * 
  */ 
+let obj = {
+    name: 'monkey'
+}
